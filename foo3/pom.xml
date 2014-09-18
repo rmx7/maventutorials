@@ -4,6 +4,8 @@
   <!-- The only model version right now which recognized both maven 2 and 3 -->
   <modelVersion>4.0.0</modelVersion>
   
+  <!-- START OF BASIC SETTING -->
+  
   <!-- The very minimum POM configuration that maven would allow  -->
   <groupId>org.training.maven</groupId>
   <artifactId>foo2</artifactId>
@@ -44,9 +46,15 @@
 		<maven.compiler.target>1.7</maven.compiler.source>
   </properties> 
   -->
-  
+   
   <!-- The default packaging would be rar. If we want another packaging type use uncomment the following-->
   <!-- <packaging>war</packaging> -->
+  
+  
+  <!-- BUILD SETTING -->
+  <build>
+  		<finalName>foo3</finalName>
+  </build>
   
   <!-- Additional POM information -->
   <name>foo1 project</name>
