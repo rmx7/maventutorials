@@ -11,33 +11,5 @@
   
   <!-- The default packaging would be rar. If we want another packaging type use uncomment the following-->
   <!-- <packaging>war</packaging> -->
-  
-  <!-- Additional POM information -->
-  <name>foo1 project</name>
-  <description>a simple project to demonstrate maven pom structure</description>
-  <url>http://romygems.github.io</url>
-  <inceptionYear>2014</inceptionYear>
-  <licenses>GPLv3</licenses>
-  <organization>Jatis</organization>
-  <developers>
-	<developer>
-        <id>rominux</id>
-        <name>Romy Elmaco</name>
-        <organization>Nerd Foundation</organization>
-        <organizationUrl>http://nerfo.org</organizationUrl>
-        <roles>
-          <role>developer</role>
-        </roles>
-        <timezone>+7</timezone>
-    </developer>
-  </developers>
-  <contributors>
-	<contributor>
-		<name>Nyccy Agma</name>
-        <roles>
-			<role>developer</role>
-        </roles>
-        <timezone>+7</timezone>
-	</contributor>
-  </contributors>
+
 </project>

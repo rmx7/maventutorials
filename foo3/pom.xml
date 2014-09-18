@@ -9,6 +9,42 @@
   <artifactId>foo2</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   
+  <!-- 
+  <dependencies>
+	<dependency>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<version>3.8.1</version>
+		<scope>test</scope>
+    </dependency>
+	dependency>
+		<groupId>org.richfaces.ui</groupId>
+		<artifactId>richfaces-components-ui</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>org.richfaces.core</groupId>
+		<artifactId>richfaces-core-impl</artifactId>
+	</dependency>
+  </dependencies>
+  
+  <parent>foo-parent</parent>
+  
+  <dependencyManagement>
+	<dependency>
+		<groupId>org.richfaces</groupId>
+		<artifactId>richfaces-bom</artifactId>
+		<version>4.3.7.Final</version>
+		<type>pom</type>
+		<scope>import</scope>
+	</dependency>
+  </dependencyManagement>
+  
+  <properties>
+  		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.source>
+  </properties> 
+  -->
+  
   <!-- The default packaging would be rar. If we want another packaging type use uncomment the following-->
   <!-- <packaging>war</packaging> -->
   
@@ -40,6 +76,5 @@
         <timezone>+7</timezone>
 	</contributor>
   </contributors>
-  
   
 </project>
