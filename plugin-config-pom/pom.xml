@@ -18,6 +18,7 @@
 	<!--<maven.compiler.source>1.7</maven.compiler.source>
 	<maven.compiler.target>1.7</maven.compiler.target>
 	<maven.test.skip>true</maven.test.skip>-->
+	<catalina.home>D:\tomcat7-training</catalina.home>
   </properties>
   
   <build>
@@ -34,8 +35,19 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.3.2</version>
+				<version>3.1</version>
 				<executions>
+					<execution>
+						<id>default-compile</id>
+						<phase>compile</phase>
+						<goals>
+							<goal>compile</goal>
+						</goals>
+						<configuration>
+							<source>1.7</source>
+							<target>1.7</target>
+						</configuration>
+					</execution>
 					<execution>
 						<id>default-testCompile</id>
 						<phase>test-compile</phase>
@@ -55,6 +67,31 @@
 					<webXml>src\main\webapp\WEB-INF\web.xml</webXml>        
 				</configuration>
 			</plugin> -->
+			<plugin>
+                <groupId>org.codehaus.cargo</groupId>
+                <artifactId>cargo-maven2-plugin</artifactId>
+                <inherited>true</inherited>
+                <executions>
+                    <execution>
+                        <id>deploy-to-container</id>
+                        <phase>integration-test</phase>
+                        <goals>
+                            <goal>redeploy</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <container>
+                        <containerId>tomcat7x</containerId>
+                        <type>installed</type>
+                        <home>${catalina.home}</home>
+                    </container>
+                    <configuration>
+                        <type>existing</type>
+                        <home>${catalina.home}</home>
+                    </configuration>
+                </configuration>
+            </plugin>
 		</plugins>
 	</pluginManagement>
   </build>
