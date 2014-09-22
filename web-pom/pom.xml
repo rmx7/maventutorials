@@ -1,0 +1,15 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  
+  <!-- The only model version right now which recognized both maven 2 and 3 -->
+  <modelVersion>4.0.0</modelVersion>
+  
+  <!-- The very minimum POM configuration that maven would allow  -->
+  <groupId>org.training.maven</groupId>
+  <artifactId>foo2</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  
+  <!-- The default packaging would be rar. If we want another packaging type use uncomment the following-->
+  <packaging>war</packaging>
+
+</project>
